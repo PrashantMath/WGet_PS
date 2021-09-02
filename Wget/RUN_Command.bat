@@ -3,7 +3,7 @@ set ps_helper_access=polyspace-access -host BGL-PMATHAPA -port 8085 -protocol ht
 set RESULT=ResultBF
 set PROG=Testing
 set PARENT_PROJECT_ON_ACCESS=/public/Testing1
-set Options_Dir = C:\My_Drive\Wget\Options
+set Options_Dir=C:\My_Drive\Wget\Options
 set WSP=%WORKSPACE%
 rd /S /Q Notification && md Notification
 
