@@ -79,6 +79,14 @@
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
 			</target>
+			<target name="Modules_PSOpts" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>polyspace-configure</buildCommand>
+				<buildArguments>-prog Wget -allow-overwrite -allow-build-error -module -output-options-path C:\My_Drive\Wget\Options make</buildArguments>
+				<buildTarget/>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>false</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
 		</buildTargets>
 	</storageModule>
 </cproject>
