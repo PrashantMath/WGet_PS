@@ -4,7 +4,7 @@ set ps_helper_access=polyspace-access -host HYD-NALANDA-14 -port 8085 -protocol 
 REM Using it for demo purpose1
 
 set RESULT=ResultBF
-set PROG=Wget
+set PROG=Wget1
 set PARENT_PROJECT_ON_ACCESS=/public/
 set Options_Dir=C:\My_Drive\Wget\Options
 set WSP=%WORKSPACE%
@@ -14,7 +14,7 @@ REM set build_cmd=build.bat
 
 REM polyspace-configure.exe -allow-overwrite -allow-build-error -prog %PROG% -author jenkins -output-options-file %PROG%.psopts %build_cmd% || EXIT /B 200
 
-polyspace-bug-finder-server.exe -options-file "%Options_Dir%\target.opts" -options-file "%Options_Dir%\wget_exe.psopts" -results-dir "%WSP%\R_BF"   ||  EXIT /B 200
+REM polyspace-bug-finder-server.exe -options-file "%Options_Dir%\target.opts" -options-file "%Options_Dir%\wget_exe.psopts" -results-dir "%WSP%\R_BF"   ||  EXIT /B 200
 
 cd ..
 
