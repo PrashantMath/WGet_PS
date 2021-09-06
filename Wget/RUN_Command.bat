@@ -21,6 +21,8 @@ REM %ps_helper_access% -upload "%WSP%\R_BF" -parent-project %PARENT_PROJECT_ON_A
 
 %ps_helper_access% -export %PARENT_PROJECT_ON_ACCESS%/%PROG% -output Results_All.tsv -defects High    ||  EXIT /B 200
 
+cd ..
+
 exit 0
 
 
