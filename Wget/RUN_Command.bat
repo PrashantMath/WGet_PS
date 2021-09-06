@@ -1,7 +1,7 @@
 set PATH=C:\MATLAB\PS_Ser_R2021a\polyspace\bin;%PATH%
 set ps_helper_access=polyspace-access -host HYD-NALANDA-14 -port 8085 -protocol http -login admin -encrypted-password PJJBJHMADIMOPCNPBDEJBPBJNENOAPCB
 
-REM Using it for demo purpose
+REM Using it for demo purpose1
 
 set RESULT=ResultBF
 set PROG=Wget
