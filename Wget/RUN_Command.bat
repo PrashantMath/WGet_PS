@@ -1,8 +1,8 @@
 set PATH=C:\MATLAB\PS_Ser_R2021a\polyspace\bin;%PATH%
-set ps_helper_access=polyspace-access -host BGL-PMATHAPA -port 8085 -protocol http -login admin -encrypted-password PJJBJHMADIMOPCNPBDEJBPBJNENOAPCB
+set ps_helper_access=polyspace-access -host HYD-NALANDA-14 -port 8085 -protocol http -login admin -encrypted-password PJJBJHMADIMOPCNPBDEJBPBJNENOAPCB
 set RESULT=ResultBF
-set PROG=Testing
-set PARENT_PROJECT_ON_ACCESS=/public/Testing1
+set PROG=Wget
+set PARENT_PROJECT_ON_ACCESS=/public/
 set Options_Dir=C:\My_Drive\Wget\Options
 set WSP=%WORKSPACE%
 rd /S /Q Notification && md Notification
