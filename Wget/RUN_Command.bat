@@ -7,6 +7,8 @@ set Options_Dir=C:\My_Drive\Wget\Options
 set WSP=%WORKSPACE%
 rd /S /Q Notification && md Notification
 
+cd Wget 
+
 REM set build_cmd=build.bat
 
 REM polyspace-configure.exe -allow-overwrite -allow-build-error -prog %PROG% -author jenkins -output-options-file %PROG%.psopts %build_cmd% || EXIT /B 200
