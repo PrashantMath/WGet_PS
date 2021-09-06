@@ -66,14 +66,12 @@
 			<target name="PSBuild_Nosrcs" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>polyspace-configure</buildCommand>
 				<buildArguments>-prog Wget -allow-overwrite -allow-build-error -no-sources -output-options-file C:\My_Drive\Wget\Options\wget_psnosrc.opts make</buildArguments>
-				<buildTarget/>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
 			</target>
 			<target name="clean" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
 				<buildTarget>clean</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
@@ -82,6 +80,13 @@
 			<target name="Modules_PSOpts" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>polyspace-configure</buildCommand>
 				<buildArguments>-prog Wget -allow-overwrite -allow-build-error -module -output-options-path C:\My_Drive\Wget\Options make</buildArguments>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>false</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="PS_prjsBuild" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>polyspace-configure</buildCommand>
+				<buildArguments>-prog Wget -allow-overwrite -allow-build-error -output-project C:\My_Drive\Wget\PSPrj\Wget.psprj make</buildArguments>
 				<buildTarget/>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
