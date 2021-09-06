@@ -4,7 +4,7 @@ set ps_helper_access=polyspace-access -host HYD-NALANDA-14 -port 8085 -protocol 
 REM Using it for demo purpose1
 
 set RESULT=ResultBF
-set PROG=Wget1
+set PROG=Wget
 set PARENT_PROJECT_ON_ACCESS=/public/
 set Options_Dir=C:\My_Drive\Wget\Options
 set WSP=%WORKSPACE%
@@ -18,9 +18,9 @@ REM polyspace-bug-finder-server.exe -options-file "%Options_Dir%\target.opts" -o
 
 cd ..
 
-%ps_helper_access% -create-project %PARENT_PROJECT_ON_ACCESS%    ||  EXIT /B 200
+REM %ps_helper_access% -create-project %PARENT_PROJECT_ON_ACCESS%    ||  EXIT /B 200
 
-%ps_helper_access% -upload "%WSP%\R_BF" -parent-project %PARENT_PROJECT_ON_ACCESS% -project "%PROG%"	||  EXIT /B 200
+REM %ps_helper_access% -upload "%WSP%\R_BF" -parent-project %PARENT_PROJECT_ON_ACCESS% -project "%PROG%"	||  EXIT /B 200
 
 %ps_helper_access% -export %PARENT_PROJECT_ON_ACCESS%/%PROG% -output Results_All.tsv -defects High    ||  EXIT /B 200
 
