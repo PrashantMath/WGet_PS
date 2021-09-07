@@ -4,7 +4,7 @@ set ps_helper_access=polyspace-access -host HYD-NALANDA-14 -port 8085 -protocol 
 REM Using it for demo purpose1
 
 set RESULT=ResultBF
-set PROG=Wget_Tested
+set PROG=Wget
 set PARENT_PROJECT_ON_ACCESS=/public/
 set Options_Dir=C:\My_Drive\Wget\Options
 set WSP=%WORKSPACE%
